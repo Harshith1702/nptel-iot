@@ -52,7 +52,8 @@ export const SourceModal: React.FC<SourceModalProps> = ({ isOpen, onClose }) => 
           </div>
           <button
             onClick={onClose}
-            className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors p-1"
+            className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors p-2 -mr-1.5"
+            aria-label="Close dialog"
           >
             <X className="w-4 h-4" />
           </button>

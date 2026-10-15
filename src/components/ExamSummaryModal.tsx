@@ -26,7 +26,8 @@ export const ExamSummaryModal: React.FC<ExamSummaryModalProps> = ({
       <div className="relative w-full max-w-sm bg-white dark:bg-[#111111] border border-zinc-200 dark:border-zinc-800 rounded-lg p-5 shadow-xl font-sans">
         <button
           onClick={onClose}
-          className="absolute right-3.5 top-3.5 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+          className="absolute right-2.5 top-2.5 p-2 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
+          aria-label="Close summary"
         >
           <X className="w-4 h-4" />
         </button>

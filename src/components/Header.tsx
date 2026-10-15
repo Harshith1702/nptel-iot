@@ -66,6 +66,16 @@ export const Header: React.FC<HeaderProps> = ({
 
             {/* Mobile Controls */}
             <div className="flex items-center gap-1.5 md:hidden">
+              <a
+                href="https://github.com/Harshith1702/nptel-iot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 text-amber-500 hover:border-amber-400/60"
+                title="Star repository on GitHub"
+                aria-label="Star on GitHub"
+              >
+                <Star className="w-3.5 h-3.5 fill-amber-500" />
+              </a>
               <button
                 onClick={onToggleTheme}
                 className="p-1.5 rounded-md border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-300"
@@ -79,14 +89,14 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Action Row */}
           <div className="flex flex-wrap items-center gap-2">
             {/* Search */}
-            <div className="relative flex-1 sm:w-52">
+            <div className="relative w-full sm:w-52">
               <Search className="w-3.5 h-3.5 text-zinc-400 absolute left-2.5 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 placeholder={`Search ${totalQuestions} questions...`}
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                className="w-full bg-zinc-50 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-md pl-8 pr-2.5 py-1 text-xs text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors"
+                className="w-full bg-zinc-50 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-md pl-8 pr-2.5 py-1.5 sm:py-1 text-xs text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors"
               />
             </div>
 
@@ -94,7 +104,7 @@ export const Header: React.FC<HeaderProps> = ({
             <select
               value={selectedTerm}
               onChange={(e) => onSelectTerm(e.target.value)}
-              className="bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-mono text-zinc-800 dark:text-zinc-200 rounded-md px-2 py-1 focus:outline-none cursor-pointer"
+              className="bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-mono text-zinc-800 dark:text-zinc-200 rounded-md px-2 py-1.5 sm:py-1 focus:outline-none cursor-pointer"
             >
               <option value="all">All Sessions ({totalQuestions})</option>
               {terms.map((t) => (
@@ -108,7 +118,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="inline-flex rounded-md border border-zinc-200 dark:border-zinc-800 p-0.5 bg-zinc-100 dark:bg-zinc-900 text-xs font-mono">
               <button
                 onClick={() => onToggleMode('practice')}
-                className={`px-2 py-0.5 rounded text-[11px] transition-colors ${
+                className={`px-2 py-1 sm:py-0.5 rounded text-[11px] transition-colors ${
                   quizMode === 'practice'
                     ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-sm font-semibold'
                     : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
@@ -119,7 +129,7 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
               <button
                 onClick={() => onToggleMode('exam')}
-                className={`px-2 py-0.5 rounded text-[11px] transition-colors ${
+                className={`px-2 py-1 sm:py-0.5 rounded text-[11px] transition-colors ${
                   quizMode === 'exam'
                     ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-sm font-semibold'
                     : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
@@ -133,7 +143,7 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Solutions Toggle */}
             <button
               onClick={onToggleAllSolutions}
-              className={`px-2 py-1 rounded-md border text-xs font-mono flex items-center gap-1 transition-colors ${
+              className={`px-2 py-1.5 sm:py-1 rounded-md border text-xs font-mono flex items-center gap-1 transition-colors ${
                 showAllSolutions
                   ? 'border-emerald-500 text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/20'
                   : 'border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 bg-zinc-50 dark:bg-zinc-900 hover:text-zinc-900 dark:hover:text-zinc-200'
@@ -153,16 +163,16 @@ export const Header: React.FC<HeaderProps> = ({
               <RotateCcw className="w-3.5 h-3.5" />
             </button>
 
-            {/* Star on GitHub */}
+            {/* Desktop Star on GitHub */}
             <a
               href="https://github.com/Harshith1702/nptel-iot"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 rounded-md border border-zinc-200 dark:border-zinc-800 text-xs font-mono text-zinc-700 dark:text-zinc-300 bg-zinc-50 dark:bg-zinc-900 hover:border-amber-400/60 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+              className="hidden md:inline-flex items-center gap-1 px-2 py-1 rounded-md border border-zinc-200 dark:border-zinc-800 text-xs font-mono text-zinc-700 dark:text-zinc-300 bg-zinc-50 dark:bg-zinc-900 hover:border-amber-400/60 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
               title="Star repository on GitHub"
             >
               <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
-              <span className="hidden sm:inline">Star</span>
+              <span>Star</span>
             </a>
 
             {/* Desktop Theme Toggle */}

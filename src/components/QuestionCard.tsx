@@ -145,9 +145,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           return (
             <label
               key={opt.key}
-              onClick={() => onSelectAnswer(question.id, opt.key)}
-              className={`flex items-start sm:items-center justify-between gap-3 p-2.5 sm:px-3 rounded-md border cursor-pointer transition-colors ${optionBorder}`}
+              className={`flex items-start sm:items-center justify-between gap-3 p-3 rounded-md border cursor-pointer select-none transition-colors ${optionBorder}`}
             >
+              <input
+                type="radio"
+                name={`q-${question.id}`}
+                value={opt.key}
+                checked={isSelected}
+                onChange={() => onSelectAnswer(question.id, opt.key)}
+                className="sr-only"
+              />
               <div className="flex items-center gap-2.5">
                 <div
                   className={`w-4 h-4 rounded-full border flex items-center justify-center flex-shrink-0 transition-colors ${radioDot}`}

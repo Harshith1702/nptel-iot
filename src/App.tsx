@@ -83,6 +83,10 @@ export const App: React.FC = () => {
   }, [bookmarks]);
 
   useEffect(() => {
+    setDisplayLimit(30);
+  }, [selectedTerm, selectedWeek, statusFilter, searchQuery]);
+
+  useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
     };
