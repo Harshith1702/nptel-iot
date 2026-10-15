@@ -7,8 +7,9 @@ import { WeekFilter } from './components/WeekFilter';
 import { FilterBar } from './components/FilterBar';
 import { QuestionCard } from './components/QuestionCard';
 import { ExamSummaryModal } from './components/ExamSummaryModal';
+import { SourceModal } from './components/SourceModal';
 import { Footer } from './components/Footer';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, FileText, CheckCircle2 } from 'lucide-react';
 
 const questionsData = rawQuestions as Question[];
 
@@ -65,6 +66,7 @@ export const App: React.FC = () => {
   const [showAllSolutions, setShowAllSolutions] = useState<boolean>(false);
   const [examSubmitted, setExamSubmitted] = useState<boolean>(false);
   const [showExamModal, setShowExamModal] = useState<boolean>(false);
+  const [showSourceModal, setShowSourceModal] = useState<boolean>(false);
   const [displayLimit, setDisplayLimit] = useState<number>(30);
   const [showScrollTop, setShowScrollTop] = useState<boolean>(false);
 
@@ -137,6 +139,7 @@ export const App: React.FC = () => {
     }
   };
 
+  // Filter questions
   const filteredQuestions = useMemo(() => {
     return questionsData.filter((q) => {
       if (selectedTerm !== 'all' && q.setId !== selectedTerm) return false;
@@ -152,7 +155,8 @@ export const App: React.FC = () => {
 
       const ans = answers[q.id];
       const isAns = !!ans;
-      const isCor = ans === q.correctAnswer;
+      const correctKeys = q.correctKeys && q.correctKeys.length > 0 ? q.correctKeys : [q.correctAnswer];
+      const isCor = !!ans && correctKeys.includes(ans);
       const isBm = !!bookmarks[q.id];
 
       if (statusFilter === 'unanswered' && isAns) return false;
@@ -178,7 +182,8 @@ export const App: React.FC = () => {
       const userAns = answers[q.id];
       if (userAns) {
         answered++;
-        if (userAns === q.correctAnswer) {
+        const correctKeys = q.correctKeys && q.correctKeys.length > 0 ? q.correctKeys : [q.correctAnswer];
+        if (correctKeys.includes(userAns)) {
           correct++;
         } else {
           incorrect++;
@@ -213,10 +218,13 @@ export const App: React.FC = () => {
       const userAns = answers[q.id];
       if (!userAns) {
         unanswered++;
-      } else if (userAns === q.correctAnswer) {
-        correct++;
       } else {
-        incorrect++;
+        const correctKeys = q.correctKeys && q.correctKeys.length > 0 ? q.correctKeys : [q.correctAnswer];
+        if (correctKeys.includes(userAns)) {
+          correct++;
+        } else {
+          incorrect++;
+        }
       }
       if (bookmarks[q.id]) {
         bookmarked++;
@@ -243,9 +251,11 @@ export const App: React.FC = () => {
         stats[q.weekNum] = { total: 0, answered: 0, correct: 0 };
       }
       stats[q.weekNum].total += 1;
-      if (answers[q.id]) {
+      const userAns = answers[q.id];
+      if (userAns) {
         stats[q.weekNum].answered += 1;
-        if (answers[q.id] === q.correctAnswer) {
+        const correctKeys = q.correctKeys && q.correctKeys.length > 0 ? q.correctKeys : [q.correctAnswer];
+        if (correctKeys.includes(userAns)) {
           stats[q.weekNum].correct += 1;
         }
       }
@@ -282,6 +292,23 @@ export const App: React.FC = () => {
       />
 
       <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 py-6">
+        {/* Authentic Provenance Notice */}
+        <div className="mb-5 p-3 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-mono">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+            <span className="text-zinc-700 dark:text-zinc-300">
+              Direct archive from official NPTEL IIT Kharagpur course portal. Non-commercial student revision aid.
+            </span>
+          </div>
+          <button
+            onClick={() => setShowSourceModal(true)}
+            className="self-start sm:self-auto flex items-center gap-1 text-emerald-700 dark:text-emerald-400 font-semibold hover:underline flex-shrink-0"
+          >
+            <FileText className="w-3.5 h-3.5" />
+            <span>Official PDFs & Slides</span>
+          </button>
+        </div>
+
         <StatsOverview stats={currentStats} bookmarkedCount={bookmarkedTotal} />
 
         <WeekFilter
@@ -381,7 +408,11 @@ export const App: React.FC = () => {
         }}
       />
 
-      {/* Footer */}
+      <SourceModal
+        isOpen={showSourceModal}
+        onClose={() => setShowSourceModal(false)}
+      />
+
       <Footer />
     </div>
   );

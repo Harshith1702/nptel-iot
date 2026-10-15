@@ -14,8 +14,10 @@ export interface Question {
   question: string;
   options: Option[];
   correctAnswer: string;
+  correctKeys: string[];
   answerRaw: string;
   solution: string;
+  sourcePdf?: string;
 }
 
 export type QuizMode = 'practice' | 'exam';
