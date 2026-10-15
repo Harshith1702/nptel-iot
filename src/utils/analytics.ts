@@ -1,7 +1,7 @@
 export const initAnalytics = () => {
   if (typeof window === 'undefined') return;
 
-  const gaId = import.meta.env.VITE_GA_ID || 'G-NPTELIOT26';
+  const gaId = import.meta.env.VITE_GA_ID || 'G-486ZZKEZE2';
   if (document.getElementById('ga-gtag-script')) return;
 
   const script = document.createElement('script');
