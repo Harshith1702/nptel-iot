@@ -15,8 +15,13 @@ const PDF_DOCUMENTS = [
       { name: "Week 3 Assignment & Solutions", file: "/assignments/Assignment 3 Solution.pdf" },
       { name: "Week 4 Assignment & Solutions", file: "/assignments/Week_4.pdf" },
       { name: "Week 5 Assignment & Solutions", file: "/assignments/Week_5_Assignment.pdf" },
+      { name: "Week 6 Assignment & Solutions", file: "/assignments/Assignment_6.pdf" },
       { name: "Week 7 Assignment & Solutions", file: "/assignments/Assignment_7.pdf" },
       { name: "Week 8 Assignment & Solutions", file: "/assignments/Assignment_8.pdf" },
+      { name: "Week 9 Assignment & Solutions", file: "/assignments/Assignment_9.pdf" },
+      { name: "Week 10 Assignment & Solutions", file: "/assignments/Assignment_10.pdf" },
+      { name: "Week 11 Assignment & Solutions", file: "/assignments/Assignment_11.pdf" },
+      { name: "Week 12 Assignment & Solutions", file: "/assignments/Assignment_12.pdf" },
     ]
   },
   {

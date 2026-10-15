@@ -2540,7 +2540,7 @@
     ],
     "answerRaw": "b. False",
     "solution": "With open-source nature, python forms a strong backbone to build large applications. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 3:46)",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q2",
@@ -2575,7 +2575,7 @@
     ],
     "answerRaw": "d. None of these",
     "solution": "Spyder and PyCharm are examples of Python IDE. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 05:12)",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q3",
@@ -2602,7 +2602,7 @@
     ],
     "answerRaw": "b. True",
     "solution": "To indicate different blocks of code, python follows rigid indention (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 07:25).",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q4",
@@ -2637,7 +2637,7 @@
     ],
     "answerRaw": "b. Branch",
     "solution": "The data-types in python are :  a. List b. Tuple c. Dictionary (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 15:20).",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q5",
@@ -2664,7 +2664,7 @@
     ],
     "answerRaw": "a. True",
     "solution": "Python allows us to read and write files. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 01:17)",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q6",
@@ -2699,7 +2699,7 @@
     ],
     "answerRaw": "d. None of these",
     "solution": "The four basic modes to open a file in python are :  a. Read mode b. Write mode c. Append mode d. Both read and write mode (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 03:00)",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q7",
@@ -2726,7 +2726,7 @@
     ],
     "answerRaw": "a. Correct",
     "solution": "The command to install the PIL library is sudo pip install pillow. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 17:40 )",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q8",
@@ -2753,7 +2753,7 @@
     ],
     "answerRaw": "a. Correct",
     "solution": "The statement s = socket.socket(socket_family, socket_type, protocol=0) creates a socket in python. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @24:27).",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q9",
@@ -2788,7 +2788,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Raspberry pi is :  a. A computer on your palm b. Single board computer c. Low cost d. Easy to access (Please refer to lecture INTRODUCTION TO RASPBERRY PI-I @05:00).",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q10",
@@ -2823,7 +2823,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "The following are required for a basic set up of Raspberry Pi :  a. Monitor b. Keyboard c. Mouse See lecture INTRODUCTION TO RASPBERRY PI-I @ 11:33",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q11",
@@ -2858,7 +2858,7 @@
     ],
     "answerRaw": "a. Ctrl+O",
     "solution": "Ctrl+O writes the code to the file in nano editor. See lecture INTRODUCTION TO RASPBERRY PI-II @ 10:44",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q12",
@@ -2893,7 +2893,7 @@
     ],
     "answerRaw": "a. 3",
     "solution": "A relay module for Raspberry Pi has 3 terminals. See lecture IMPLEMENTATION OF IOT WITH RASPBERRY PI-I @ 06:01.",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q13",
@@ -2920,7 +2920,7 @@
     ],
     "answerRaw": "a. True",
     "solution": "Adafruit provides a library to work with the DHT22 sensor. See lecture IMPLEMENTATION OF IOT WITH RASPBERRY PI-I @ 09:19",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q14",
@@ -2955,7 +2955,7 @@
     ],
     "answerRaw": "b. It closes the current connection to the file and ensures that the file is free to use for other resources",
     "solution": "The close() function in python ensures that the file is free to use for other resources. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 4:44)",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w6-q15",
@@ -2990,7 +2990,7 @@
     ],
     "answerRaw": "b. It is available as image file from the Raspberry Pi official website",
     "solution": "Raspbian image can be downloaded from the Raspberry Pi official website. (Please refer to lecture INTRODUCTION TO RASPBERYY PI-I @ 12:32) Introduction to Internet of Things",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_6.pdf"
   },
   {
     "id": "2026-w7-q1",
@@ -4068,7 +4068,7 @@
     ],
     "answerRaw": "a.  Suse",
     "solution": "Nova and Swift are two of the many components of OpenStack (Please refer Lecture 41@3:18) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q2",
@@ -4103,7 +4103,7 @@
     ],
     "answerRaw": "d. Sink node",
     "solution": "The sensed data is sent to sink node for further processing in WSNs (Please refer Lecture 42@4:04) ______________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q3",
@@ -4138,7 +4138,7 @@
     ],
     "answerRaw": "c. Statements I, II, and III",
     "solution": "The advantages of cloud computing are Elasticity, pay-per-use and self service (Please refer Lecture 42@5:58) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q4",
@@ -4173,7 +4173,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Price, post deployment maintenance and battery lifetime are the main limitations of WSN. (Please refer Lecture 42@11:01) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q5",
@@ -4208,7 +4208,7 @@
     ],
     "answerRaw": "b.  Sensor-Cloud Service Provider",
     "solution": "Sensor-Cloud Service Provider plays the managerial role in sensor-cloud architecture. (Please refer Lecture 42@14:29) ______________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q6",
@@ -4243,7 +4243,7 @@
     ],
     "answerRaw": "d. Virtual sensor nodes",
     "solution": "The optimal composition of Virtual sensor nodes is a management issue in sensor-cloud. (Please refer Lecture 43@4:39) ______________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q7",
@@ -4278,7 +4278,7 @@
     ],
     "answerRaw": "b. CISCO",
     "solution": "CISCO coined the term Fog computing. (Please refer Lecture 44@4:18) ____________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q8",
@@ -4313,7 +4313,7 @@
     ],
     "answerRaw": "c. All of these",
     "solution": "Volume, bandwidth and latency are some of the issues related to the current cloud model. (Please refer Lecture 44@10:30) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q9",
@@ -4340,7 +4340,7 @@
     ],
     "answerRaw": "b. False",
     "solution": "Sensor data is processed in the fog before it is sent to the cloud. (Please refer Lecture 45@6:11) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q10",
@@ -4375,7 +4375,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Fog nodes work according to the type of data which are very time-sensitive, less time-sensitive and non-time sensitive data. (Please refer Lecture 45@11:39) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q11",
@@ -4410,7 +4410,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "The advantages of Fog includes quick decision making, nodes can be mobile and Fog reduces the risk of latency . (Please refer Lecture 45@20:57) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q12",
@@ -4445,7 +4445,7 @@
     ],
     "answerRaw": "b. Most time-sensitive data",
     "solution": "Most time-sensitive data requires the analysis at the nearest node. (Please refer Lecture 45@15:46) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q13",
@@ -4472,7 +4472,7 @@
     ],
     "answerRaw": "b. False",
     "solution": "Fog nodes can connect and leave the network when necessary. (Please refer Lecture 45@25:27) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q14",
@@ -4507,7 +4507,7 @@
     ],
     "answerRaw": "c. Accelerators",
     "solution": "Accelerators increase the speed of service accessibility. (Please refer to Page 260, Chapter 11, Introduction to IoT. S. Misra, A. Mukherjee, and A. Roy, 2020. Cambridge University Press.) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w9-q15",
@@ -4542,7 +4542,7 @@
     ],
     "answerRaw": "a. Hardware virtualization",
     "solution": "The concept of hardware virtualization enables physical hardware to be shared among multiple entities. (Please refer to Page 262, Chapter 11, Introduction to IoT. S. Misra, A. Mukherjee, and A. Roy, 2020. Cambridge University Press.) ___________________________________________________________________ Introduction to Internet of Things",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_9.pdf"
   },
   {
     "id": "2026-w10-q1",
@@ -4577,7 +4577,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Smart homes can be used for home monitoring, conservation of resources, security and safety. (Please refer Lecture 46@25:02) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q2",
@@ -4612,7 +4612,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Reliability, Large scale and Big data are some of the challenges of iot in smart cities. (Please refer Lecture 46@32:57) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q3",
@@ -4647,7 +4647,7 @@
     ],
     "answerRaw": "c. Statements I, II, and III",
     "solution": "Smart parking reduces traffic congestion and fuel consumption, and increases urban mobility (Please refer Lecture 47@16:46) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q4",
@@ -4682,7 +4682,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Information Collection, System Deployment and Service Dissemination are all the functional layers in smart parking. (Please refer Lecture 47@17:24) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q5",
@@ -4717,7 +4717,7 @@
     ],
     "answerRaw": "b. along the route",
     "solution": "The mobile sensing in smart parking collects the information along the route. (Please refer Lecture 47@19:47) ______________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q6",
@@ -4752,7 +4752,7 @@
     ],
     "answerRaw": "d. Home Area Network",
     "solution": "The network which provides amalgamation of various systems within a home is known as Home Area Network. (Please refer Lecture 48@8:24) ______________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q7",
@@ -4787,7 +4787,7 @@
     ],
     "answerRaw": "b. Digital Living Network Alliance",
     "solution": "DLNA stands for Digital Living Network Alliance standards. (Please refer Lecture 48@13:49) ____________________________________________________________________ _____",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q8",
@@ -4822,7 +4822,7 @@
     ],
     "answerRaw": "c. All of these",
     "solution": "The Zigbee Alliance is composed of Mitsubishi, Honeywell, Invensys, Motorola and Philips. (Please refer Lecture 48@15:46) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q9",
@@ -4849,7 +4849,7 @@
     ],
     "answerRaw": "b. False",
     "solution": "Network and Application layers are defined by Zigbee in Zigbee. (Please refer Lecture 48@16:42) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q10",
@@ -4884,7 +4884,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Hierarchically named data, Scalable data dissemination and In-network caching are all the features of CCN. (Please refer Lecture 49@15:17) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q11",
@@ -4919,7 +4919,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "The phases of ICV development: Phase 1: Based on 2G, Phase 2: Based on 4G LTE, Phase 3: Vehicles connected to cloud (Please refer Lecture 50@12:28) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q12",
@@ -4954,7 +4954,7 @@
     ],
     "answerRaw": "b. Distributed architecture",
     "solution": "V2X follows a distributed architecture. (Please refer Lecture 49@12:06) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q13",
@@ -4981,7 +4981,7 @@
     ],
     "answerRaw": "b. False",
     "solution": "The vehicles are mobile in the Ad-hoc domain of VANET.. (Please refer Lecture 50@16:59) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q14",
@@ -5016,7 +5016,7 @@
     ],
     "answerRaw": "c. All of these",
     "solution": "Both of the In-vehicle and Ad-hoc are the two domains of VANETs. (Please refer Lecture 50@14:36) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w10-q15",
@@ -5051,7 +5051,7 @@
     ],
     "answerRaw": "a. Dedicated Short Range Communication",
     "solution": "ICV is based on Dedicated Short Range Communication. (Please refer Lecture 50@7:22) ___________________________________________________________________ Introduction to Internet of Things",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_10.pdf"
   },
   {
     "id": "2026-w11-q1",
@@ -5086,7 +5086,7 @@
     ],
     "answerRaw": "a.  Electricity with a brain",
     "solution": "Smart grids are also known as Electricity with a brain, Energy internet, and Electronet. (Please refer Lecture 51@8:33) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q2",
@@ -5121,7 +5121,7 @@
     ],
     "answerRaw": "a. Unidirectional",
     "solution": "Traditional grid follows unidirectional flow of energy. (Please refer Lecture 51@5:41) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q3",
@@ -5156,7 +5156,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Smart Grids provide efficient transmission of electricity, lower electricity rates and Improved security. (Please refer Lecture 51@11:26) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q4",
@@ -5191,7 +5191,7 @@
     ],
     "answerRaw": "d.  All of these",
     "solution": "Net metering, Time-of-Use pricing and Financial incentives are ways of consumer engagements. (Please refer Lecture 51 @32:31) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q5",
@@ -5226,7 +5226,7 @@
     ],
     "answerRaw": "b. Islanding",
     "solution": "In islanding, a home can have power from distributed resources.(Please refer Lecture 51 @31:20) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q6",
@@ -5261,7 +5261,7 @@
     ],
     "answerRaw": "a. Data Aggregator Units",
     "solution": "Data Aggregator Units aggregates energy consumption of a certain geographical area (Please refer Lecture 52@15:03) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q7",
@@ -5296,7 +5296,7 @@
     ],
     "answerRaw": "d. Statements I, II and III",
     "solution": "Replay attacks compromises sensors and monitors their outputs. D-DIA can lead to a system collapse. Covert attack is a closed loop version of replay attacks. (Please refer Lecture 52@20:03) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q8",
@@ -5331,7 +5331,7 @@
     ],
     "answerRaw": "d. MDMSs",
     "solution": "MDMS is a centralized coordinator for smart grid communication. (Please refer Lecture 52@15:32) _______________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q9",
@@ -5366,7 +5366,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "C-Bus, DECT, EnOcean and Universal Powerline Bus are available protocols for smart home appliances. (Please refer Lecture 52@12:35) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q10",
@@ -5401,7 +5401,7 @@
     ],
     "answerRaw": "d. Latency",
     "solution": "Latency is the time required to transmit the data. (Please refer Lecture 53@21:20) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q11",
@@ -5428,7 +5428,7 @@
     ],
     "answerRaw": "b. False",
     "solution": "IIoT is based on wrap & re-use approach. (Please refer Lecture 53@9:53) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q12",
@@ -5463,7 +5463,7 @@
     ],
     "answerRaw": "d. None of these",
     "solution": "Internet evolution and automation happened in the 3rd Revolution.(Please refer Lecture 53@10:06) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q13",
@@ -5498,7 +5498,7 @@
     ],
     "answerRaw": "a. Standardization",
     "solution": "Standardization improves the interoperability of different systems. (Please refer Lecture 54@16:09) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q14",
@@ -5525,7 +5525,7 @@
     ],
     "answerRaw": "a. True",
     "solution": "Big data is characterized by 7 Vs. (Please refer Lecture 55@10:36) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w11-q15",
@@ -5560,7 +5560,7 @@
     ],
     "answerRaw": "a. Distributed processing of large datasets",
     "solution": "Hadoop is used for distributed processing of large datasets across Large clusters of computers (Please refer Lecture 55@23:18) ____________________________________________________________________________ Introduction to Internet of Things",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_11.pdf"
   },
   {
     "id": "2026-w12-q1",
@@ -5595,7 +5595,7 @@
     ],
     "answerRaw": "a.  Qualitative and Quantitative",
     "solution": "Qualitative and Quantitative are the two types of data analysis. (Please refer Lecture 56@2:33) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q2",
@@ -5630,7 +5630,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "The three principles of Qualitative analysis are: Notice things, think about things and collect things. (Please refer Lecture 56@4:12) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q3",
@@ -5665,7 +5665,7 @@
     ],
     "answerRaw": "c. Statements I, II, and III",
     "solution": "Data dispersion, Contingence and Correlation are involved with quantitative analysis. (Please refer Lecture 56@4:46) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q4",
@@ -5702,7 +5702,7 @@
     ],
     "answerRaw": "c. Both a and b",
     "solution": "Range and average absolute deviation are the type of data dispersions. (Please refer Lecture 56@13:43) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q5",
@@ -5737,7 +5737,7 @@
     ],
     "answerRaw": "b. Normality",
     "solution": "In ANOVA, if the distribution of each group is normal, it is known as normality. (Please refer Lecture 56@11:01) ______________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q6",
@@ -5772,7 +5772,7 @@
     ],
     "answerRaw": "d. Variance",
     "solution": "The expectation of the squared deviation of a random variable from its mean is known as Variance. (Please refer Lecture 56@14:04) ______________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q7",
@@ -5807,7 +5807,7 @@
     ],
     "answerRaw": "b. Complete and incomplete",
     "solution": "Complete and incomplete are two types of statistical models (Please refer Lecture 56@8:11) ____________________________________________________________________ _____",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q8",
@@ -5844,7 +5844,7 @@
     ],
     "answerRaw": "c. Both a and b",
     "solution": "Contingency table is a type of table that displays the frequency distribution of the variables. It is also known as Cross tabulation and Cross tab. (Please refer Lecture 56@14:29) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q9",
@@ -5871,7 +5871,7 @@
     ],
     "answerRaw": "a. True",
     "solution": "Advances in sensor and connectivity have enabled preventive care in IoT Healthcare. (Please refer Lecture 58@4:22) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q10",
@@ -5906,7 +5906,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Automated irrigation system, Automated weeding system and Water level monitoring are all applications of IoT in agriculture. (Please refer Lecture 57@2:05) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q11",
@@ -5941,7 +5941,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "In-place data analysis is power intensive, can be done on the device and needs no network connection. (Please refer Lecture 59@20:24) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q12",
@@ -5976,7 +5976,7 @@
     ],
     "answerRaw": "b. Long term monitoring",
     "solution": "Long term monitoring is one of the advantages of Activity monitoring. (Please refer Lecture 59@16:17) ____________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q13",
@@ -6003,7 +6003,7 @@
     ],
     "answerRaw": "b. False",
     "solution": "Deep learning based data analysis can be done on sensor data, images and videos. (Please refer Lecture 59@19:34) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q14",
@@ -6038,7 +6038,7 @@
     ],
     "answerRaw": "d. All of these",
     "solution": "Network-based data analysis uses low power, good network connection and can perform group-based analytics (Please refer Lecture 59@20:10) _________________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2026-w12-q15",
@@ -6075,7 +6075,7 @@
     ],
     "answerRaw": "d. Both a and b",
     "solution": "Daily observation of behavior and Long term monitoring are two advantages of continuous activity monitoring. (Please refer Lecture 59@16:15) ___________________________________________________________________",
-    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+    "sourcePdf": "/assignments/Assignment_12.pdf"
   },
   {
     "id": "2024-jan-apr-w0-q1",
