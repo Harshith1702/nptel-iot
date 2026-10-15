@@ -1,6 +1,6 @@
 import React from 'react';
 import { QuizStats } from '../types/quiz';
-import { X } from 'lucide-react';
+import { X, Star } from 'lucide-react';
 
 interface ExamSummaryModalProps {
   isOpen: boolean;
@@ -87,6 +87,31 @@ export const ExamSummaryModal: React.FC<ExamSummaryModalProps> = ({
             >
               Review
             </button>
+          </div>
+        </div>
+
+        {/* Star & Follow Footnote */}
+        <div className="mt-4 pt-3 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between text-[11px] font-mono text-zinc-500">
+          <span>Found this useful?</span>
+          <div className="flex items-center gap-2">
+            <a
+              href="https://github.com/Harshith1702/nptel-iot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-zinc-700 dark:text-zinc-300 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
+            >
+              <Star className="w-3 h-3 text-amber-500 fill-amber-500" />
+              <span>Star repo</span>
+            </a>
+            <span>•</span>
+            <a
+              href="https://x.com/harshith_irl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 underline transition-colors"
+            >
+              @harshith_irl
+            </a>
           </div>
         </div>
       </div>

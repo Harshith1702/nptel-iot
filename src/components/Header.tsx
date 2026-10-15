@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sun, Moon, Search, RotateCcw, Eye, EyeOff } from 'lucide-react';
+import { Sun, Moon, Search, RotateCcw, Eye, EyeOff, Star } from 'lucide-react';
 import { QuizMode } from '../types/quiz';
 
 interface HeaderProps {
@@ -78,7 +78,7 @@ export const Header: React.FC<HeaderProps> = ({
               <Search className="w-3.5 h-3.5 text-zinc-400 absolute left-2.5 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
-                placeholder="Search 724 questions..."
+                placeholder={`Search ${totalQuestions} questions...`}
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 className="w-full bg-zinc-50 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-md pl-8 pr-2.5 py-1 text-xs text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors"
@@ -147,6 +147,18 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <RotateCcw className="w-3.5 h-3.5" />
             </button>
+
+            {/* Star on GitHub */}
+            <a
+              href="https://github.com/Harshith1702/nptel-iot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 px-2 py-1 rounded-md border border-zinc-200 dark:border-zinc-800 text-xs font-mono text-zinc-700 dark:text-zinc-300 bg-zinc-50 dark:bg-zinc-900 hover:border-amber-400/60 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+              title="Star repository on GitHub"
+            >
+              <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+              <span className="hidden sm:inline">Star</span>
+            </a>
 
             {/* Desktop Theme Toggle */}
             <button
