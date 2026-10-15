@@ -10,6 +10,8 @@ import { ExamSummaryModal } from './components/ExamSummaryModal';
 import { SourceModal } from './components/SourceModal';
 import { Footer } from './components/Footer';
 import { ArrowUp, FileText, CheckCircle2 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
+import { initAnalytics, trackEvent } from './utils/analytics';
 
 const questionsData = rawQuestions as Question[];
 
@@ -34,6 +36,10 @@ export const App: React.FC = () => {
       root.classList.remove('dark');
     }
   }, [theme]);
+
+  useEffect(() => {
+    initAnalytics();
+  }, []);
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
@@ -119,6 +125,7 @@ export const App: React.FC = () => {
       ...prev,
       [questionId]: answerKey,
     }));
+    trackEvent('answer_selected', { question_id: questionId, answer_key: answerKey });
   };
 
   const handleClearAnswer = (questionId: string) => {
@@ -418,6 +425,7 @@ export const App: React.FC = () => {
       />
 
       <Footer />
+      <Analytics />
     </div>
   );
 };
