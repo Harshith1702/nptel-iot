@@ -46,15 +46,20 @@ export const Header: React.FC<HeaderProps> = ({
               <span className="text-[11px] font-mono px-1.5 py-0.5 rounded border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400">
                 IIT KGP
               </span>
-              <span className="text-xs font-mono text-zinc-400 dark:text-zinc-500">
+              <span className="text-xs font-mono text-zinc-400 dark:text-zinc-500 inline-flex items-center gap-1.5">
                 by{' '}
                 <a
-                  href="https://x.com/harshith_irl"
+                  href="https://harshith-padakanti.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-zinc-800 dark:text-zinc-200 font-medium hover:underline hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                  className="inline-flex items-center gap-1 text-zinc-800 dark:text-zinc-200 font-medium hover:underline hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
                 >
-                  harshith
+                  <img
+                    src="/avatar.jpg"
+                    alt="harshith"
+                    className="w-4 h-4 rounded-full object-cover border border-zinc-300 dark:border-zinc-700"
+                  />
+                  <span>harshith</span>
                 </a>
               </span>
             </div>

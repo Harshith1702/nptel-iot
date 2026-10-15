@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
               <span>Helpful for your exam prep?</span>
             </div>
             <p className="text-zinc-500 text-[11px] mt-0.5">
-              Star this project on GitHub and follow for future course dumps and tools.
+              Star this project on GitHub and check out more work.
             </p>
           </div>
           <div className="flex items-center flex-wrap gap-2">
@@ -36,12 +36,12 @@ export const Footer: React.FC = () => {
               <ExternalLink className="w-3 h-3 opacity-60" />
             </a>
             <a
-              href="https://github.com/Harshith1702"
+              href="https://harshith-padakanti.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 hover:border-zinc-900 dark:hover:border-zinc-100 font-medium transition-colors"
             >
-              <span>Follow on GitHub</span>
+              <span>Portfolio</span>
               <ExternalLink className="w-3 h-3 opacity-60" />
             </a>
           </div>
@@ -49,10 +49,15 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Attribution Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-1">
-          <div className="flex flex-wrap items-center gap-1.5 text-center sm:text-left">
+          <div className="flex flex-wrap items-center gap-2 text-center sm:text-left">
+            <img
+              src="/avatar.jpg"
+              alt="Harshith"
+              className="w-4 h-4 rounded-full object-cover border border-zinc-300 dark:border-zinc-700"
+            />
             <span>Made by</span>
             <a
-              href="https://x.com/harshith_irl"
+              href="https://harshith-padakanti.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-900 dark:text-zinc-200 font-semibold underline hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
@@ -64,6 +69,16 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4">
+            <a
+              href="https://harshith-padakanti.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            >
+              <span>Portfolio</span>
+              <ExternalLink className="w-3 h-3 opacity-60" />
+            </a>
+
             <a
               href="https://x.com/harshith_irl"
               target="_blank"
