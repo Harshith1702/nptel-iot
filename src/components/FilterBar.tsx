@@ -25,7 +25,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   examSubmitted,
 }) => {
   const filters: { id: FilterStatus; label: string; count: number }[] = [
-    { id: 'all', label: 'All', count: counts.all },
+    { id: 'all', label: 'All Questions', count: counts.all },
     { id: 'unanswered', label: 'Unanswered', count: counts.unanswered },
     { id: 'incorrect', label: 'Incorrect', count: counts.incorrect },
     { id: 'correct', label: 'Correct', count: counts.correct },
