@@ -7,12 +7,37 @@ import { WeekFilter } from './components/WeekFilter';
 import { FilterBar } from './components/FilterBar';
 import { QuestionCard } from './components/QuestionCard';
 import { ExamSummaryModal } from './components/ExamSummaryModal';
-import { BookOpen, Sparkles, Filter, AlertCircle, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 const questionsData = rawQuestions as Question[];
 
 export const App: React.FC = () => {
-  // State
+  // Theme state
+  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
+    try {
+      const saved = localStorage.getItem('nptel_iot_theme');
+      if (saved === 'light' || saved === 'dark') return saved;
+    } catch {}
+    return 'dark';
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('nptel_iot_theme', theme);
+    } catch {}
+    const root = document.documentElement;
+    if (theme === 'dark') {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
+  // Answers and Bookmarks
   const [answers, setAnswers] = useState<Record<string, string>>(() => {
     try {
       const saved = localStorage.getItem('nptel_iot_answers');
@@ -42,7 +67,6 @@ export const App: React.FC = () => {
   const [displayLimit, setDisplayLimit] = useState<number>(30);
   const [showScrollTop, setShowScrollTop] = useState<boolean>(false);
 
-  // Sync to localStorage
   useEffect(() => {
     try {
       localStorage.setItem('nptel_iot_answers', JSON.stringify(answers));
@@ -55,20 +79,14 @@ export const App: React.FC = () => {
     } catch {}
   }, [bookmarks]);
 
-  // Scroll to top listener
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 400) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
+      setShowScrollTop(window.scrollY > 400);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Available Terms
   const terms = useMemo(() => {
     const termMap: Record<string, { id: string; title: string; count: number }> = {};
     for (const q of questionsData) {
@@ -80,7 +98,6 @@ export const App: React.FC = () => {
     return Object.values(termMap);
   }, []);
 
-  // Available Weeks in selected Term
   const availableWeeks = useMemo(() => {
     const relevant = selectedTerm === 'all' 
       ? questionsData 
@@ -90,7 +107,6 @@ export const App: React.FC = () => {
     return Array.from(weeksSet).sort((a, b) => a - b);
   }, [selectedTerm]);
 
-  // Answer handler - lets user check / change choice immediately
   const handleSelectAnswer = (questionId: string, answerKey: string) => {
     setAnswers((prev) => ({
       ...prev,
@@ -114,22 +130,17 @@ export const App: React.FC = () => {
   };
 
   const handleResetProgress = () => {
-    if (window.confirm("Are you sure you want to reset all selected answers?")) {
+    if (window.confirm("Reset all chosen answers?")) {
       setAnswers({});
       setExamSubmitted(false);
     }
   };
 
-  // Filtered Questions
   const filteredQuestions = useMemo(() => {
     return questionsData.filter((q) => {
-      // Term filter
       if (selectedTerm !== 'all' && q.setId !== selectedTerm) return false;
-
-      // Week filter
       if (selectedWeek !== null && q.weekNum !== selectedWeek) return false;
 
-      // Search filter
       if (searchQuery.trim()) {
         const query = searchQuery.toLowerCase();
         const matchesQ = q.question.toLowerCase().includes(query);
@@ -138,7 +149,6 @@ export const App: React.FC = () => {
         if (!matchesQ && !matchesSol && !matchesOpts) return false;
       }
 
-      // Status filter
       const ans = answers[q.id];
       const isAns = !!ans;
       const isCor = ans === q.correctAnswer;
@@ -153,12 +163,10 @@ export const App: React.FC = () => {
     });
   }, [selectedTerm, selectedWeek, searchQuery, statusFilter, answers, bookmarks]);
 
-  // Reset display limit on filter change
   useEffect(() => {
     setDisplayLimit(30);
   }, [selectedTerm, selectedWeek, statusFilter, searchQuery]);
 
-  // Overall and current filter stats
   const currentStats: QuizStats = useMemo(() => {
     const total = filteredQuestions.length;
     let answered = 0;
@@ -181,9 +189,7 @@ export const App: React.FC = () => {
     return { total, answered, correct, incorrect, percentage };
   }, [filteredQuestions, answers]);
 
-  // Filter counts for tabs
   const filterCounts = useMemo(() => {
-    // Calculate for current Term + Week + Search
     const baseList = questionsData.filter((q) => {
       if (selectedTerm !== 'all' && q.setId !== selectedTerm) return false;
       if (selectedWeek !== null && q.weekNum !== selectedWeek) return false;
@@ -225,7 +231,6 @@ export const App: React.FC = () => {
     };
   }, [selectedTerm, selectedWeek, searchQuery, answers, bookmarks]);
 
-  // Week breakdown stats
   const weekStats = useMemo(() => {
     const stats: Record<number, { total: number; answered: number; correct: number }> = {};
     const relevant = selectedTerm === 'all' 
@@ -249,13 +254,8 @@ export const App: React.FC = () => {
 
   const bookmarkedTotal = Object.values(bookmarks).filter(Boolean).length;
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
-    <div className="min-h-screen bg-[#090a0f] text-zinc-100 flex flex-col font-sans">
-      {/* Top Navigation */}
+    <div className="min-h-screen bg-white dark:bg-[#0a0a0a] text-zinc-900 dark:text-zinc-100 flex flex-col font-sans transition-colors duration-150">
       <Header
         terms={terms}
         selectedTerm={selectedTerm}
@@ -276,14 +276,13 @@ export const App: React.FC = () => {
         onSearchChange={setSearchQuery}
         onResetProgress={handleResetProgress}
         totalQuestions={questionsData.length}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
 
-      {/* Main Container */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {/* Modern Dashboard Stats Cards */}
+      <main className="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 py-6">
         <StatsOverview stats={currentStats} bookmarkedCount={bookmarkedTotal} />
 
-        {/* Week Selector Tabs */}
         <WeekFilter
           weeks={availableWeeks}
           selectedWeek={selectedWeek}
@@ -296,7 +295,6 @@ export const App: React.FC = () => {
           }
         />
 
-        {/* Secondary Filter Bar */}
         <FilterBar
           currentFilter={statusFilter}
           onFilterChange={setStatusFilter}
@@ -309,15 +307,10 @@ export const App: React.FC = () => {
           examSubmitted={examSubmitted}
         />
 
-        {/* Questions Stream */}
         {filteredQuestions.length === 0 ? (
-          <div className="text-center py-16 bg-zinc-900/30 rounded-2xl border border-zinc-800">
-            <div className="w-12 h-12 rounded-xl bg-zinc-800/80 flex items-center justify-center text-zinc-400 mx-auto mb-3">
-              <AlertCircle className="w-6 h-6" />
-            </div>
-            <h3 className="text-sm font-semibold text-zinc-200">No questions match your current filters</h3>
-            <p className="text-xs text-zinc-500 mt-1">
-              Try resetting filters, searching different keywords, or selecting another week.
+          <div className="text-center py-12 border border-zinc-200 dark:border-zinc-800 rounded-lg">
+            <p className="text-xs font-mono text-zinc-500">
+              No questions found matching criteria.
             </p>
             <button
               onClick={() => {
@@ -325,20 +318,15 @@ export const App: React.FC = () => {
                 setSelectedWeek(null);
                 setSearchQuery('');
               }}
-              className="mt-4 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-700"
+              className="mt-3 px-3 py-1 rounded text-xs font-mono border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900"
             >
               Reset Filters
             </button>
           </div>
         ) : (
           <div>
-            <div className="flex items-center justify-between text-xs text-zinc-500 mb-3 px-1">
-              <span>
-                Showing {Math.min(displayLimit, filteredQuestions.length)} of {filteredQuestions.length} questions
-              </span>
-              {filteredQuestions.length > displayLimit && (
-                <span>Scroll down to load more</span>
-              )}
+            <div className="flex justify-between text-[11px] font-mono text-zinc-400 mb-2 px-1">
+              <span>Showing {Math.min(displayLimit, filteredQuestions.length)} of {filteredQuestions.length}</span>
             </div>
 
             {filteredQuestions.slice(0, displayLimit).map((q) => (
@@ -359,10 +347,10 @@ export const App: React.FC = () => {
             {filteredQuestions.length > displayLimit && (
               <div className="text-center py-6">
                 <button
-                  onClick={() => setDisplayLimit((prev) => prev + 40)}
-                  className="px-5 py-2.5 rounded-xl text-xs font-semibold bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-700/80 shadow-sm transition-all"
+                  onClick={() => setDisplayLimit((prev) => prev + 30)}
+                  className="px-4 py-2 rounded text-xs font-mono border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
                 >
-                  Load Next 40 Questions ({filteredQuestions.length - displayLimit} remaining)
+                  Load More ({filteredQuestions.length - displayLimit} remaining)
                 </button>
               </div>
             )}
@@ -370,18 +358,16 @@ export const App: React.FC = () => {
         )}
       </main>
 
-      {/* Floating Scroll to Top */}
       {showScrollTop && (
         <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-2.5 rounded-xl bg-zinc-800/90 text-zinc-200 border border-zinc-700 hover:bg-emerald-500 hover:text-zinc-950 transition-all shadow-xl z-40"
-          title="Back to top"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-5 right-5 p-2 rounded-md border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 shadow-lg hover:border-zinc-400 transition-colors z-30"
+          aria-label="Back to top"
         >
           <ArrowUp className="w-4 h-4" />
         </button>
       )}
 
-      {/* Exam Result Modal */}
       <ExamSummaryModal
         isOpen={showExamModal}
         onClose={() => setShowExamModal(false)}

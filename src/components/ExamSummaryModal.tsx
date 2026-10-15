@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
-import confetti from 'canvas-confetti';
-import { Trophy, CheckCircle2, XCircle, RotateCcw, ArrowRight, X } from 'lucide-react';
+import React from 'react';
 import { QuizStats } from '../types/quiz';
+import { X } from 'lucide-react';
 
 interface ExamSummaryModalProps {
   isOpen: boolean;
@@ -18,113 +17,75 @@ export const ExamSummaryModal: React.FC<ExamSummaryModalProps> = ({
   onReviewMistakes,
   onRetake,
 }) => {
-  useEffect(() => {
-    if (isOpen && stats.percentage >= 60) {
-      try {
-        confetti({
-          particleCount: 80,
-          spread: 70,
-          origin: { y: 0.6 }
-        });
-      } catch (e) {
-        // ignore
-      }
-    }
-  }, [isOpen, stats.percentage]);
-
   if (!isOpen) return null;
 
-  const passed = stats.percentage >= 40; // NPTEL passing standard is typically 40%
+  const passed = stats.percentage >= 40;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
-      <div className="relative w-full max-w-md bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+      <div className="relative w-full max-w-sm bg-white dark:bg-[#111111] border border-zinc-200 dark:border-zinc-800 rounded-lg p-5 shadow-xl font-sans">
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 p-1.5 text-zinc-400 hover:text-white rounded-lg hover:bg-zinc-800 transition-colors"
+          className="absolute right-3.5 top-3.5 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
         >
           <X className="w-4 h-4" />
         </button>
 
-        <div className="text-center mb-6">
-          <div className="mx-auto w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-3 shadow-lg shadow-emerald-500/10">
-            <Trophy className="w-7 h-7" />
-          </div>
-          <h2 className="text-xl font-bold text-white tracking-tight">Exam Evaluation Completed</h2>
-          <p className="text-xs text-zinc-400 mt-1">
-            NPTEL Introduction to Internet of Things Assessment Result
-          </p>
-        </div>
+        <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100 font-mono tracking-tight mb-1">
+          Exam Summary
+        </h3>
+        <p className="text-xs text-zinc-500 mb-4">
+          NPTEL Introduction to IoT assessment result
+        </p>
 
-        {/* Score Card */}
-        <div className="bg-zinc-950/80 rounded-xl p-4 border border-zinc-800 mb-6">
-          <div className="flex items-center justify-between pb-3 border-b border-zinc-800">
-            <span className="text-xs text-zinc-400">Total Score</span>
-            <span className="text-lg font-bold font-mono text-white">
+        {/* Minimal Score breakdown */}
+        <div className="border border-zinc-200 dark:border-zinc-800 rounded p-3 mb-4 space-y-2 font-mono text-xs">
+          <div className="flex justify-between">
+            <span className="text-zinc-500">SCORE</span>
+            <span className="font-semibold text-zinc-900 dark:text-zinc-100">
               {stats.correct} / {stats.answered}
             </span>
           </div>
-
-          <div className="flex items-center justify-between py-3 border-b border-zinc-800">
-            <span className="text-xs text-zinc-400">Accuracy Rate</span>
-            <span className={`text-xl font-bold font-mono ${
-              passed ? 'text-emerald-400' : 'text-rose-400'
-            }`}>
+          <div className="flex justify-between">
+            <span className="text-zinc-500">ACCURACY</span>
+            <span className={`font-semibold ${passed ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
               {stats.percentage}%
             </span>
           </div>
-
-          <div className="grid grid-cols-2 gap-3 pt-3">
-            <div className="flex items-center gap-2 text-xs text-emerald-400 font-medium">
-              <CheckCircle2 className="w-4 h-4" />
-              <span>{stats.correct} Correct</span>
-            </div>
-            <div className="flex items-center gap-2 text-xs text-rose-400 font-medium">
-              <XCircle className="w-4 h-4" />
-              <span>{stats.incorrect} Incorrect</span>
-            </div>
+          <div className="flex justify-between">
+            <span className="text-zinc-500">STATUS</span>
+            <span className={`font-semibold ${passed ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+              {passed ? 'PASSED (>=40%)' : 'NEEDS PRACTICE'}
+            </span>
           </div>
         </div>
 
-        {/* Verdict Badge */}
-        <div className={`p-3 rounded-xl mb-6 text-center text-xs font-semibold ${
-          passed
-            ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/30'
-            : 'bg-rose-500/10 text-rose-300 border border-rose-500/30'
-        }`}>
-          {passed
-            ? '🎉 Congratulations! You cleared the exam benchmark (>40%).'
-            : '⚠️ Benchmark not met. Review the mistakes below to solidify concepts.'}
-        </div>
-
         {/* Actions */}
-        <div className="flex flex-col gap-2">
+        <div className="space-y-2">
           {stats.incorrect > 0 && (
             <button
               onClick={() => {
                 onReviewMistakes();
                 onClose();
               }}
-              className="w-full py-2.5 px-4 rounded-xl text-xs font-semibold bg-rose-500/15 border border-rose-500/30 text-rose-300 hover:bg-rose-500/25 flex items-center justify-center gap-2 transition-all"
+              className="w-full py-1.5 px-3 rounded text-xs font-mono font-medium border border-rose-300 dark:border-rose-900 text-rose-700 dark:text-rose-400 bg-rose-50/50 dark:bg-rose-950/20 hover:bg-rose-100/50 transition-colors"
             >
-              <span>Review {stats.incorrect} Incorrect Questions</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              Filter {stats.incorrect} Incorrect Questions
             </button>
           )}
 
-          <div className="flex items-center gap-2">
+          <div className="flex gap-2">
             <button
               onClick={onRetake}
-              className="flex-1 py-2.5 px-4 rounded-xl text-xs font-medium bg-zinc-800 text-zinc-300 hover:bg-zinc-700 transition-all flex items-center justify-center gap-1.5"
+              className="flex-1 py-1.5 px-3 rounded text-xs font-mono border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
-              <RotateCcw className="w-3.5 h-3.5" />
-              <span>Reset & Retake</span>
+              Reset
             </button>
             <button
               onClick={onClose}
-              className="flex-1 py-2.5 px-4 rounded-xl text-xs font-semibold bg-emerald-500 text-zinc-950 hover:bg-emerald-400 transition-all shadow-md shadow-emerald-500/20"
+              className="flex-1 py-1.5 px-3 rounded text-xs font-mono font-semibold bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 hover:opacity-90 transition-opacity"
             >
-              Continue Review
+              Review
             </button>
           </div>
         </div>
