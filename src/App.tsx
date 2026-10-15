@@ -7,6 +7,7 @@ import { WeekFilter } from './components/WeekFilter';
 import { FilterBar } from './components/FilterBar';
 import { QuestionCard } from './components/QuestionCard';
 import { ExamSummaryModal } from './components/ExamSummaryModal';
+import { Footer } from './components/Footer';
 import { ArrowUp } from 'lucide-react';
 
 const questionsData = rawQuestions as Question[];
@@ -379,6 +380,9 @@ export const App: React.FC = () => {
           setShowExamModal(false);
         }}
       />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
