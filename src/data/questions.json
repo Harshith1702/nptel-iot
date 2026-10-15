@@ -2516,6 +2516,483 @@
     "sourcePdf": "/assignments/Week_5_Assignment.pdf"
   },
   {
+    "id": "2026-w6-q1",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 1,
+    "question": "Python can only be used to build small applications.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. False",
+    "solution": "With open-source nature, python forms a strong backbone to build large applications. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 3:46)",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q2",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 2,
+    "question": "Which of the following is NOT a Python IDE?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Spyder"
+      },
+      {
+        "key": "b",
+        "text": "PyCharm"
+      },
+      {
+        "key": "c",
+        "text": "Both (a) and (b)"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. None of these",
+    "solution": "Spyder and PyCharm are examples of Python IDE. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 05:12)",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q3",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 3,
+    "question": "State whether the following statement is true or false. Statement: To indicate different blocks of code, python follows rigid indention.",
+    "options": [
+      {
+        "key": "a",
+        "text": "False"
+      },
+      {
+        "key": "b",
+        "text": "True"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. True",
+    "solution": "To indicate different blocks of code, python follows rigid indention (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 07:25).",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q4",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 4,
+    "question": "Which of the following is not a data-type in Python?",
+    "options": [
+      {
+        "key": "a",
+        "text": "List"
+      },
+      {
+        "key": "b",
+        "text": "Branch"
+      },
+      {
+        "key": "c",
+        "text": "Tuple"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. Branch",
+    "solution": "The data-types in python are :  a. List b. Tuple c. Dictionary (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- I @ 15:20).",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q5",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 5,
+    "question": "State whether the following statement is true or false. Statement: Python allows us to read and write files.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. True",
+    "solution": "Python allows us to read and write files. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 01:17)",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q6",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 6,
+    "question": "Which of the following is NOT a mode to open a file?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Read mode"
+      },
+      {
+        "key": "b",
+        "text": "Write mode"
+      },
+      {
+        "key": "c",
+        "text": "Append mode"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. None of these",
+    "solution": "The four basic modes to open a file in python are :  a. Read mode b. Write mode c. Append mode d. Both read and write mode (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 03:00)",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q7",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 7,
+    "question": "State whether the following command to install the PIL library in Linux is correct or not. sudo pip install pillow",
+    "options": [
+      {
+        "key": "a",
+        "text": "Correct"
+      },
+      {
+        "key": "b",
+        "text": "Incorrect"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Correct",
+    "solution": "The command to install the PIL library is sudo pip install pillow. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 17:40 )",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q8",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 8,
+    "question": "State whether the following statement is correct for creating a socket 's' in python. s = socket.socket(socket_family, socket_type, protocol=0)",
+    "options": [
+      {
+        "key": "a",
+        "text": "Correct"
+      },
+      {
+        "key": "b",
+        "text": "Incorrect"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Correct",
+    "solution": "The statement s = socket.socket(socket_family, socket_type, protocol=0) creates a socket in python. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @24:27).",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q9",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 9,
+    "question": "What is a Raspberry Pi?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A computer on your palm"
+      },
+      {
+        "key": "b",
+        "text": "Single board computer"
+      },
+      {
+        "key": "c",
+        "text": "Low cost"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Raspberry pi is :  a. A computer on your palm b. Single board computer c. Low cost d. Easy to access (Please refer to lecture INTRODUCTION TO RASPBERRY PI-I @05:00).",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q10",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 10,
+    "question": "Which of the following are required for a basic set up of Raspberry Pi?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Monitor"
+      },
+      {
+        "key": "b",
+        "text": "Keyboard"
+      },
+      {
+        "key": "c",
+        "text": "Mouse"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "The following are required for a basic set up of Raspberry Pi :  a. Monitor b. Keyboard c. Mouse See lecture INTRODUCTION TO RASPBERRY PI-I @ 11:33",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q11",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 11,
+    "question": "Which of the following keyboard key combination writes (i.e saves) the code to the file in nano editor ?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl+O"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl+X"
+      },
+      {
+        "key": "c",
+        "text": "Both (a) and (b)"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Ctrl+O",
+    "solution": "Ctrl+O writes the code to the file in nano editor. See lecture INTRODUCTION TO RASPBERRY PI-II @ 10:44",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q12",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 12,
+    "question": "A relay module for Raspberry Pi has how many terminals ?",
+    "options": [
+      {
+        "key": "a",
+        "text": "3"
+      },
+      {
+        "key": "b",
+        "text": "2"
+      },
+      {
+        "key": "c",
+        "text": "4"
+      },
+      {
+        "key": "d",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. 3",
+    "solution": "A relay module for Raspberry Pi has 3 terminals. See lecture IMPLEMENTATION OF IOT WITH RASPBERRY PI-I @ 06:01.",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q13",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 13,
+    "question": "State whether the following statement is true or false. Statement: Adafruit provides a library to work with the DHT22 sensor.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. True",
+    "solution": "Adafruit provides a library to work with the DHT22 sensor. See lecture IMPLEMENTATION OF IOT WITH RASPBERRY PI-I @ 09:19",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q14",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 14,
+    "question": "What is the function of the close() function in python programming while handling files.",
+    "options": [
+      {
+        "key": "a",
+        "text": "This function does not exist in python"
+      },
+      {
+        "key": "b",
+        "text": "It closes the current connection to the file and ensures that the file is free to use for other resources"
+      },
+      {
+        "key": "c",
+        "text": "None of these"
+      },
+      {
+        "key": "d",
+        "text": "Both (a) and (b)"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. It closes the current connection to the file and ensures that the file is free to use for other resources",
+    "solution": "The close() function in python ensures that the file is free to use for other resources. (Please refer to lecture INTRODUCTION TO PYTHON PROGRAMMING- II @ 4:44)",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w6-q15",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 6",
+    "weekNum": 6,
+    "questionNum": 15,
+    "question": "Where is the Raspbian image found?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It is not available on the Internet"
+      },
+      {
+        "key": "b",
+        "text": "It is available as image file from the Raspberry Pi official website"
+      },
+      {
+        "key": "c",
+        "text": "It can only be purchased from offline vendor"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. It is available as image file from the Raspberry Pi official website",
+    "solution": "Raspbian image can be downloaded from the Raspberry Pi official website. (Please refer to lecture INTRODUCTION TO RASPBERYY PI-I @ 12:32) Introduction to Internet of Things",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
     "id": "2026-w7-q1",
     "setId": "2026-current",
     "term": "2026 (Current Session: noc26_cs161)",
@@ -3557,6 +4034,2048 @@
     "answerRaw": "b. CLOUDS Lab, University of Melbourne, based on Java",
     "solution": "CloudSim is a simulation framework that models cloud computing environments (data centers, VMs, applications, users, and network topology), written in a Java-based environment, and developed at the CLOUDS Lab of the University of Melbourne. See Lecture 40 (Cloud Computing :  Case Studies, slide 5) NPTEL Online Certification Courses Indian Institute of Technology Kharagpur ************END************",
     "sourcePdf": "/assignments/Assignment_8.pdf"
+  },
+  {
+    "id": "2026-w9-q1",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 1,
+    "question": "Which of the following is not a component of OpenStack?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Suse"
+      },
+      {
+        "key": "b",
+        "text": "Nova"
+      },
+      {
+        "key": "c",
+        "text": "Swift"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a.  Suse",
+    "solution": "Nova and Swift are two of the many components of OpenStack (Please refer Lecture 41@3:18) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q2",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 2,
+    "question": "Where is the sensed data sent for further processing in WSNs?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Client node"
+      },
+      {
+        "key": "b",
+        "text": "Central node"
+      },
+      {
+        "key": "c",
+        "text": "Collect node"
+      },
+      {
+        "key": "d",
+        "text": "Sink node"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. Sink node",
+    "solution": "The sensed data is sent to sink node for further processing in WSNs (Please refer Lecture 42@4:04) ______________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q3",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 3,
+    "question": "Select the statement(s) that denote the advantages of cloud computing. Statement I: Elasticity Statement II: Pay-per-use Statement III: Self Service",
+    "options": [
+      {
+        "key": "a",
+        "text": "Statement I"
+      },
+      {
+        "key": "b",
+        "text": "Statement II"
+      },
+      {
+        "key": "c",
+        "text": "Statements I, II, and III"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "answerRaw": "c. Statements I, II, and III",
+    "solution": "The advantages of cloud computing are Elasticity, pay-per-use and self service (Please refer Lecture 42@5:58) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q4",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 4,
+    "question": "Which of the following is a limitation of WSN?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Price"
+      },
+      {
+        "key": "b",
+        "text": "Post deployment maintenance"
+      },
+      {
+        "key": "c",
+        "text": "Battery lifetime"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Price, post deployment maintenance and battery lifetime are the main limitations of WSN. (Please refer Lecture 42@11:01) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q5",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 5,
+    "question": "The managerial role is played by __________ in sensor-cloud architecture.",
+    "options": [
+      {
+        "key": "a",
+        "text": "End-users"
+      },
+      {
+        "key": "b",
+        "text": "Sensor-Cloud Service Provider"
+      },
+      {
+        "key": "c",
+        "text": "None of these"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b.  Sensor-Cloud Service Provider",
+    "solution": "Sensor-Cloud Service Provider plays the managerial role in sensor-cloud architecture. (Please refer Lecture 42@14:29) ______________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q6",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 6,
+    "question": "The optimal composition of __________ is a management issue in sensor-cloud.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Logistics"
+      },
+      {
+        "key": "b",
+        "text": "Pricing"
+      },
+      {
+        "key": "c",
+        "text": "Caching"
+      },
+      {
+        "key": "d",
+        "text": "Virtual sensor nodes"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. Virtual sensor nodes",
+    "solution": "The optimal composition of Virtual sensor nodes is a management issue in sensor-cloud. (Please refer Lecture 43@4:39) ______________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q7",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 7,
+    "question": "Who coined the term Fog computing?",
+    "options": [
+      {
+        "key": "a",
+        "text": "IBM"
+      },
+      {
+        "key": "b",
+        "text": "CISCO"
+      },
+      {
+        "key": "c",
+        "text": "All of these"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. CISCO",
+    "solution": "CISCO coined the term Fog computing. (Please refer Lecture 44@4:18) ____________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q8",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 8,
+    "question": "What are the issues related to the current cloud model?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Volume"
+      },
+      {
+        "key": "b",
+        "text": "Latency"
+      },
+      {
+        "key": "c",
+        "text": "All of these"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "answerRaw": "c. All of these",
+    "solution": "Volume, bandwidth and latency are some of the issues related to the current cloud model. (Please refer Lecture 44@10:30) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q9",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 9,
+    "question": "Sensor data is processed in the cloud before it is sent to the fog.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. False",
+    "solution": "Sensor data is processed in the fog before it is sent to the cloud. (Please refer Lecture 45@6:11) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q10",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 10,
+    "question": "What is the type of received data according to which Fog nodes work?.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Non-time sensitive data"
+      },
+      {
+        "key": "b",
+        "text": "Very time-sensitive data"
+      },
+      {
+        "key": "c",
+        "text": "Less time-sensitive data"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Fog nodes work according to the type of data which are very time-sensitive, less time-sensitive and non-time sensitive data. (Please refer Lecture 45@11:39) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q11",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 11,
+    "question": "Which of the following are the advantages of Fog?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Quick decision making"
+      },
+      {
+        "key": "b",
+        "text": "Nodes can be mobile"
+      },
+      {
+        "key": "c",
+        "text": "Reduces the risk of latency"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "The advantages of Fog includes quick decision making, nodes can be mobile and Fog reduces the risk of latency . (Please refer Lecture 45@20:57) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q12",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 12,
+    "question": "Which of the following requires the analysis at the nearest node?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Non-time sensitive data"
+      },
+      {
+        "key": "b",
+        "text": "Most time-sensitive data"
+      },
+      {
+        "key": "c",
+        "text": "Less time-sensitive data"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. Most time-sensitive data",
+    "solution": "Most time-sensitive data requires the analysis at the nearest node. (Please refer Lecture 45@15:46) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q13",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 13,
+    "question": "Fog nodes cannot connect and leave the network when necessary.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. False",
+    "solution": "Fog nodes can connect and leave the network when necessary. (Please refer Lecture 45@25:27) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q14",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 14,
+    "question": "Which of the following is used by the fog applications to increase the speed of service accessibility?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Low power"
+      },
+      {
+        "key": "b",
+        "text": "Good network connection"
+      },
+      {
+        "key": "c",
+        "text": "Accelerators"
+      },
+      {
+        "key": "d",
+        "text": "Analytics"
+      }
+    ],
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "answerRaw": "c. Accelerators",
+    "solution": "Accelerators increase the speed of service accessibility. (Please refer to Page 260, Chapter 11, Introduction to IoT. S. Misra, A. Mukherjee, and A. Roy, 2020. Cambridge University Press.) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w9-q15",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 9",
+    "weekNum": 9,
+    "questionNum": 15,
+    "question": "Fill in the blank. The concept of ________ enables physical hardware to be shared among multiple entities.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hardware virtualization"
+      },
+      {
+        "key": "b",
+        "text": "Software virtualization"
+      },
+      {
+        "key": "c",
+        "text": "Module virtualization"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Hardware virtualization",
+    "solution": "The concept of hardware virtualization enables physical hardware to be shared among multiple entities. (Please refer to Page 262, Chapter 11, Introduction to IoT. S. Misra, A. Mukherjee, and A. Roy, 2020. Cambridge University Press.) ___________________________________________________________________ Introduction to Internet of Things",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q1",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 1,
+    "question": "Smart homes can be used for _____________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Home monitoring"
+      },
+      {
+        "key": "b",
+        "text": "Conservation of resources like electricity"
+      },
+      {
+        "key": "c",
+        "text": "Security and safety"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Smart homes can be used for home monitoring, conservation of resources, security and safety. (Please refer Lecture 46@25:02) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q2",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 2,
+    "question": "Which of the following is an iot challenge in smart cities?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Reliability"
+      },
+      {
+        "key": "b",
+        "text": "Large scale"
+      },
+      {
+        "key": "c",
+        "text": "Big data"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Reliability, Large scale and Big data are some of the challenges of iot in smart cities. (Please refer Lecture 46@32:57) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q3",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 3,
+    "question": "Select the statement(s) that are true for smart parking. Statement I: Smart parking reduces traffic congestion Statement II: Smart parking increases urban mobility Statement III: Smart parking reduces fuel consumption",
+    "options": [
+      {
+        "key": "a",
+        "text": "Statement I"
+      },
+      {
+        "key": "b",
+        "text": "Statement II"
+      },
+      {
+        "key": "c",
+        "text": "Statements I, II, and III"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "answerRaw": "c. Statements I, II, and III",
+    "solution": "Smart parking reduces traffic congestion and fuel consumption, and increases urban mobility (Please refer Lecture 47@16:46) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q4",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 4,
+    "question": "Which of the following is a functional layer in smart parking?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Information Collection"
+      },
+      {
+        "key": "b",
+        "text": "System Deployment"
+      },
+      {
+        "key": "c",
+        "text": "Service Dissemination"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Information Collection, System Deployment and Service Dissemination are all the functional layers in smart parking. (Please refer Lecture 47@17:24) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q5",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 5,
+    "question": "The mobile sensing in smart parking collects the information __________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "in-place"
+      },
+      {
+        "key": "b",
+        "text": "along the route"
+      },
+      {
+        "key": "c",
+        "text": "None of these"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. along the route",
+    "solution": "The mobile sensing in smart parking collects the information along the route. (Please refer Lecture 47@19:47) ______________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q6",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 6,
+    "question": "The network which provides amalgamation of various systems within a home is known as __________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Local Area Network"
+      },
+      {
+        "key": "b",
+        "text": "Metropolitan Area Network"
+      },
+      {
+        "key": "c",
+        "text": "Global Area Network"
+      },
+      {
+        "key": "d",
+        "text": "Home Area Network"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. Home Area Network",
+    "solution": "The network which provides amalgamation of various systems within a home is known as Home Area Network. (Please refer Lecture 48@8:24) ______________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q7",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 7,
+    "question": "Which of the following is the correct full form of DLNA Standards for HAN?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Digital Lifestyle Network Alliance"
+      },
+      {
+        "key": "b",
+        "text": "Digital Living Network Alliance"
+      },
+      {
+        "key": "c",
+        "text": "Digital Lifestyle Network Algorithm"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. Digital Living Network Alliance",
+    "solution": "DLNA stands for Digital Living Network Alliance standards. (Please refer Lecture 48@13:49) ____________________________________________________________________ _____",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q8",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 8,
+    "question": "Which of the following is a part of ZigBee Alliance?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mitsubishi"
+      },
+      {
+        "key": "b",
+        "text": "Honeywell"
+      },
+      {
+        "key": "c",
+        "text": "All of these"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "answerRaw": "c. All of these",
+    "solution": "The Zigbee Alliance is composed of Mitsubishi, Honeywell, Invensys, Motorola and Philips. (Please refer Lecture 48@15:46) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q9",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 9,
+    "question": "Network and Application layers are defined by IEEE 802.15.4 in Zigbee.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. False",
+    "solution": "Network and Application layers are defined by Zigbee in Zigbee. (Please refer Lecture 48@16:42) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q10",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 10,
+    "question": "Which of the following is a feature of Content Centric Networking?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hierarchically named data"
+      },
+      {
+        "key": "b",
+        "text": "Scalable data dissemination"
+      },
+      {
+        "key": "c",
+        "text": "In-network caching"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Hierarchically named data, Scalable data dissemination and In-network caching are all the features of CCN. (Please refer Lecture 49@15:17) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q11",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 11,
+    "question": "Which of the following is a phase of ICV development?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Based on 2G"
+      },
+      {
+        "key": "b",
+        "text": "Based on 4G LTE"
+      },
+      {
+        "key": "c",
+        "text": "Vehicles connected to cloud"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "The phases of ICV development: Phase 1: Based on 2G, Phase 2: Based on 4G LTE, Phase 3: Vehicles connected to cloud (Please refer Lecture 50@12:28) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q12",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 12,
+    "question": "Which of the following is a property of V2X?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Restricted to a single source"
+      },
+      {
+        "key": "b",
+        "text": "Distributed architecture"
+      },
+      {
+        "key": "c",
+        "text": "Both of these"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. Distributed architecture",
+    "solution": "V2X follows a distributed architecture. (Please refer Lecture 49@12:06) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q13",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 13,
+    "question": "The vehicles cannot be mobile in the Ad-hoc domain of VANET.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. False",
+    "solution": "The vehicles are mobile in the Ad-hoc domain of VANET.. (Please refer Lecture 50@16:59) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q14",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 14,
+    "question": "Which of the following is a domain of VANET?",
+    "options": [
+      {
+        "key": "a",
+        "text": "In-vehicle"
+      },
+      {
+        "key": "b",
+        "text": "Ad-hoc"
+      },
+      {
+        "key": "c",
+        "text": "All of these"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "answerRaw": "c. All of these",
+    "solution": "Both of the In-vehicle and Ad-hoc are the two domains of VANETs. (Please refer Lecture 50@14:36) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w10-q15",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 10",
+    "weekNum": 10,
+    "questionNum": 15,
+    "question": "Fill in the blank. ICV is based on ________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dedicated Short Range Communication"
+      },
+      {
+        "key": "b",
+        "text": "Directed Short Range Communication"
+      },
+      {
+        "key": "c",
+        "text": "Dedicated Small Range Communication"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Dedicated Short Range Communication",
+    "solution": "ICV is based on Dedicated Short Range Communication. (Please refer Lecture 50@7:22) ___________________________________________________________________ Introduction to Internet of Things",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q1",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 1,
+    "question": "What are some of the other names of the smart grids?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Electricity with a brain"
+      },
+      {
+        "key": "b",
+        "text": "Energybar"
+      },
+      {
+        "key": "c",
+        "text": "Electrolyte"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a.  Electricity with a brain",
+    "solution": "Smart grids are also known as Electricity with a brain, Energy internet, and Electronet. (Please refer Lecture 51@8:33) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q2",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 2,
+    "question": "Traditional Grid follows which type of flow of energy?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unidirectional"
+      },
+      {
+        "key": "b",
+        "text": "Bidirectional"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Unidirectional",
+    "solution": "Traditional grid follows unidirectional flow of energy. (Please refer Lecture 51@5:41) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q3",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 3,
+    "question": "Which of the following is a benefit associated with smart grids?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Efficient transmission of electricity"
+      },
+      {
+        "key": "b",
+        "text": "Lower electricity rates"
+      },
+      {
+        "key": "c",
+        "text": "Improved security"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Smart Grids provide efficient transmission of electricity, lower electricity rates and Improved security. (Please refer Lecture 51@11:26) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q4",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 4,
+    "question": "Which of the following is a way of consumer engagement?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Net metering"
+      },
+      {
+        "key": "b",
+        "text": "Time-of-Use pricing"
+      },
+      {
+        "key": "c",
+        "text": "Financial incentives"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d.  All of these",
+    "solution": "Net metering, Time-of-Use pricing and Financial incentives are ways of consumer engagements. (Please refer Lecture 51 @32:31) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q5",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 5,
+    "question": "Fill in the blank. In ___________, a home can have power from distributed resources.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Peaking"
+      },
+      {
+        "key": "b",
+        "text": "Islanding"
+      },
+      {
+        "key": "c",
+        "text": "Neither a nor b"
+      },
+      {
+        "key": "d",
+        "text": "Both a and b"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. Islanding",
+    "solution": "In islanding, a home can have power from distributed resources.(Please refer Lecture 51 @31:20) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q6",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 6,
+    "question": "Which of the following aggregates energy consumption of a certain geographical area?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Data Aggregator Units"
+      },
+      {
+        "key": "b",
+        "text": "Meter Data Management System"
+      },
+      {
+        "key": "c",
+        "text": "Buffer"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Data Aggregator Units",
+    "solution": "Data Aggregator Units aggregates energy consumption of a certain geographical area (Please refer Lecture 52@15:03) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q7",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 7,
+    "question": "Which of the following statements are true about Dynamic System Attacks? Statement I: Replay attacks compromises sensors and monitors their outputs. Statement II: D-DIA can lead to a system collapse. Statement III: Covert attack is a closed loop version of replay attacks.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Statements I and II"
+      },
+      {
+        "key": "b",
+        "text": "Statements I and III"
+      },
+      {
+        "key": "c",
+        "text": "Statements II and III"
+      },
+      {
+        "key": "d",
+        "text": "Statement I, II and III"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. Statements I, II and III",
+    "solution": "Replay attacks compromises sensors and monitors their outputs. D-DIA can lead to a system collapse. Covert attack is a closed loop version of replay attacks. (Please refer Lecture 52@20:03) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q8",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 8,
+    "question": "Fill in the blank. ____________ is a centralized coordinator for smart grid communication.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Gateway"
+      },
+      {
+        "key": "b",
+        "text": "Meter"
+      },
+      {
+        "key": "c",
+        "text": "AMH"
+      },
+      {
+        "key": "d",
+        "text": "MDMS"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. MDMSs",
+    "solution": "MDMS is a centralized coordinator for smart grid communication. (Please refer Lecture 52@15:32) _______________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q9",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 9,
+    "question": "Fill in the blank. ____________ are available protocols for smart home appliances.",
+    "options": [
+      {
+        "key": "a",
+        "text": "C-Bus"
+      },
+      {
+        "key": "b",
+        "text": "DECT"
+      },
+      {
+        "key": "c",
+        "text": "EnOcean"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "C-Bus, DECT, EnOcean and Universal Powerline Bus are available protocols for smart home appliances. (Please refer Lecture 52@12:35) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q10",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 10,
+    "question": "Fill in the blank. ____________ is the time required to transmit the data.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Scalability"
+      },
+      {
+        "key": "b",
+        "text": "Topology"
+      },
+      {
+        "key": "c",
+        "text": "Throughput"
+      },
+      {
+        "key": "d",
+        "text": "Latency"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. Latency",
+    "solution": "Latency is the time required to transmit the data. (Please refer Lecture 53@21:20) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q11",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 11,
+    "question": "IIoT is based on Wrap & Replace approach.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. False",
+    "solution": "IIoT is based on wrap & re-use approach. (Please refer Lecture 53@9:53) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q12",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 12,
+    "question": "Which of the following happened in the 3rd Revolution?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mass production"
+      },
+      {
+        "key": "b",
+        "text": "IIoT"
+      },
+      {
+        "key": "c",
+        "text": "Mechanized production"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. None of these",
+    "solution": "Internet evolution and automation happened in the 3rd Revolution.(Please refer Lecture 53@10:06) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q13",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 13,
+    "question": "Which of the following is used to improve the interoperability of different systems?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Standardization"
+      },
+      {
+        "key": "b",
+        "text": "Optimization"
+      },
+      {
+        "key": "c",
+        "text": "Monitoring"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Standardization",
+    "solution": "Standardization improves the interoperability of different systems. (Please refer Lecture 54@16:09) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q14",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 14,
+    "question": "Big data is characterized by 7 Vs.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. True",
+    "solution": "Big data is characterized by 7 Vs. (Please refer Lecture 55@10:36) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w11-q15",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 11",
+    "weekNum": 11,
+    "questionNum": 15,
+    "question": "What is Hadoop used in?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Distributed processing of large datasets"
+      },
+      {
+        "key": "b",
+        "text": "Small clusters of computers"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. Distributed processing of large datasets",
+    "solution": "Hadoop is used for distributed processing of large datasets across Large clusters of computers (Please refer Lecture 55@23:18) ____________________________________________________________________________ Introduction to Internet of Things",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q1",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 1,
+    "question": "The two types of data analysis are _____________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Qualitative and Quantitative"
+      },
+      {
+        "key": "b",
+        "text": "Repetitive and Quantitative"
+      },
+      {
+        "key": "c",
+        "text": "Neither a nor b"
+      },
+      {
+        "key": "d",
+        "text": "Both a and b"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a.  Qualitative and Quantitative",
+    "solution": "Qualitative and Quantitative are the two types of data analysis. (Please refer Lecture 56@2:33) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q2",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 2,
+    "question": "Which of the following is a principle of Qualitative analysis.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Notice things"
+      },
+      {
+        "key": "b",
+        "text": "Think about things"
+      },
+      {
+        "key": "c",
+        "text": "Collect things"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "The three principles of Qualitative analysis are: Notice things, think about things and collect things. (Please refer Lecture 56@4:12) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q3",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 3,
+    "question": "Select the statement(s) that is involved with quantitative analysis. Statement I: Data dispersion Statement II: Contingence Statement III: Correlation",
+    "options": [
+      {
+        "key": "a",
+        "text": "Statement I"
+      },
+      {
+        "key": "b",
+        "text": "Statement II"
+      },
+      {
+        "key": "c",
+        "text": "Statements I, II, and III"
+      },
+      {
+        "key": "d",
+        "text": "None of these"
+      }
+    ],
+    "correctAnswer": "c",
+    "correctKeys": [
+      "c"
+    ],
+    "answerRaw": "c. Statements I, II, and III",
+    "solution": "Data dispersion, Contingence and Correlation are involved with quantitative analysis. (Please refer Lecture 56@4:46) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q4",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 4,
+    "question": "Which of the following is a type of data dispersion?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Range"
+      },
+      {
+        "key": "b",
+        "text": "Average absolute deviation"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "Neither a nor b"
+      }
+    ],
+    "correctAnswer": "c, a, b",
+    "correctKeys": [
+      "c",
+      "a",
+      "b"
+    ],
+    "answerRaw": "c. Both a and b",
+    "solution": "Range and average absolute deviation are the type of data dispersions. (Please refer Lecture 56@13:43) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q5",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 5,
+    "question": "In ANOVA, if the distribution of each group is normal, it is known as __________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Homogeneity"
+      },
+      {
+        "key": "b",
+        "text": "Normality"
+      },
+      {
+        "key": "c",
+        "text": "Neither a nor b"
+      },
+      {
+        "key": "d",
+        "text": "Both a and b"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. Normality",
+    "solution": "In ANOVA, if the distribution of each group is normal, it is known as normality. (Please refer Lecture 56@11:01) ______________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q6",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 6,
+    "question": "The expectation of the squared deviation of a random variable from its mean is known as __________.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Absolute deviation"
+      },
+      {
+        "key": "b",
+        "text": "Range"
+      },
+      {
+        "key": "c",
+        "text": "Standard deviation"
+      },
+      {
+        "key": "d",
+        "text": "Variance"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. Variance",
+    "solution": "The expectation of the squared deviation of a random variable from its mean is known as Variance. (Please refer Lecture 56@14:04) ______________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q7",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 7,
+    "question": "What are the two types of statistical models?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Regression and dispersion"
+      },
+      {
+        "key": "b",
+        "text": "Complete and incomplete"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "Neither a nor b"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. Complete and incomplete",
+    "solution": "Complete and incomplete are two types of statistical models (Please refer Lecture 56@8:11) ____________________________________________________________________ _____",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q8",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 8,
+    "question": "Which of the following is a type of table that displays the frequency distribution of the variables?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cross tabulation"
+      },
+      {
+        "key": "b",
+        "text": "Contingency table"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "Neither a nor b"
+      }
+    ],
+    "correctAnswer": "c, a, b",
+    "correctKeys": [
+      "c",
+      "a",
+      "b"
+    ],
+    "answerRaw": "c. Both a and b",
+    "solution": "Contingency table is a type of table that displays the frequency distribution of the variables. It is also known as Cross tabulation and Cross tab. (Please refer Lecture 56@14:29) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q9",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 9,
+    "question": "Advances in sensor and connectivity have enabled preventive care in IoT Healthcare.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "a",
+    "correctKeys": [
+      "a"
+    ],
+    "answerRaw": "a. True",
+    "solution": "Advances in sensor and connectivity have enabled preventive care in IoT Healthcare. (Please refer Lecture 58@4:22) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q10",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 10,
+    "question": "Which of the following is an application of IoT in Agriculture?.",
+    "options": [
+      {
+        "key": "a",
+        "text": "Automated irrigation system"
+      },
+      {
+        "key": "b",
+        "text": "Automated weeding system"
+      },
+      {
+        "key": "c",
+        "text": "Water level monitoring"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Automated irrigation system, Automated weeding system and Water level monitoring are all applications of IoT in agriculture. (Please refer Lecture 57@2:05) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q11",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 11,
+    "question": "Which of the following is a property of in-place data analysis?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Power intensive"
+      },
+      {
+        "key": "b",
+        "text": "On the device"
+      },
+      {
+        "key": "c",
+        "text": "No need of network"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "In-place data analysis is power intensive, can be done on the device and needs no network connection. (Please refer Lecture 59@20:24) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q12",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 12,
+    "question": "Which of the following is the advantage of activity monitoring?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Expensive"
+      },
+      {
+        "key": "b",
+        "text": "Long term monitoring"
+      },
+      {
+        "key": "c",
+        "text": "Both a and b"
+      },
+      {
+        "key": "d",
+        "text": "Neither a nor b"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. Long term monitoring",
+    "solution": "Long term monitoring is one of the advantages of Activity monitoring. (Please refer Lecture 59@16:17) ____________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q13",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 13,
+    "question": "Deep learning based data analysis cannot be performed on sensor data.",
+    "options": [
+      {
+        "key": "a",
+        "text": "True"
+      },
+      {
+        "key": "b",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "b",
+    "correctKeys": [
+      "b"
+    ],
+    "answerRaw": "b. False",
+    "solution": "Deep learning based data analysis can be done on sensor data, images and videos. (Please refer Lecture 59@19:34) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q14",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 14,
+    "question": "Which of the following is true for network-based data analysis?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Low power"
+      },
+      {
+        "key": "b",
+        "text": "Good network connection required"
+      },
+      {
+        "key": "c",
+        "text": "Group-based analytics"
+      },
+      {
+        "key": "d",
+        "text": "All of these"
+      }
+    ],
+    "correctAnswer": "d",
+    "correctKeys": [
+      "d"
+    ],
+    "answerRaw": "d. All of these",
+    "solution": "Network-based data analysis uses low power, good network connection and can perform group-based analytics (Please refer Lecture 59@20:10) _________________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
+  },
+  {
+    "id": "2026-w12-q15",
+    "setId": "2026-current",
+    "term": "2026 (Current Session: noc26_cs161)",
+    "shortTerm": "2026 Current",
+    "week": "Week 12",
+    "weekNum": 12,
+    "questionNum": 15,
+    "question": "Which of the following is an advantage of continuous activity monitoring?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Daily observation of behavior"
+      },
+      {
+        "key": "b",
+        "text": "Long term monitoring"
+      },
+      {
+        "key": "c",
+        "text": "Neither a nor b"
+      },
+      {
+        "key": "d",
+        "text": "Both a and b"
+      }
+    ],
+    "correctAnswer": "d, a, b",
+    "correctKeys": [
+      "d",
+      "a",
+      "b"
+    ],
+    "answerRaw": "d. Both a and b",
+    "solution": "Daily observation of behavior and Long term monitoring are two advantages of continuous activity monitoring. (Please refer Lecture 59@16:15) ___________________________________________________________________",
+    "sourcePdf": "/assignments/JAN-APR 2024 IOT ASSIGNMENTS.pdf"
   },
   {
     "id": "2024-jan-apr-w0-q1",
