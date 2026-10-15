@@ -12,6 +12,7 @@ import { Footer } from './components/Footer';
 import { ArrowUp, FileText, CheckCircle2 } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
 import { initAnalytics, trackEvent } from './utils/analytics';
+import { evaluateAnswer, getQuestionCorrectKeys, normalizeSelectedAnswer } from './utils/quizUtils';
 
 const questionsData = rawQuestions as Question[];
 
@@ -46,10 +47,19 @@ export const App: React.FC = () => {
   };
 
   // Answers and Bookmarks
-  const [answers, setAnswers] = useState<Record<string, string>>(() => {
+  const [answers, setAnswers] = useState<Record<string, string[]>>(() => {
     try {
       const saved = localStorage.getItem('nptel_iot_answers');
-      return saved ? JSON.parse(saved) : {};
+      if (!saved) return {};
+      const parsed = JSON.parse(saved);
+      const normalized: Record<string, string[]> = {};
+      for (const [k, v] of Object.entries(parsed)) {
+        const norm = normalizeSelectedAnswer(v as string | string[]);
+        if (norm.length > 0) {
+          normalized[k] = norm;
+        }
+      }
+      return normalized;
     } catch {
       return {};
     }
@@ -121,10 +131,35 @@ export const App: React.FC = () => {
   }, [selectedTerm]);
 
   const handleSelectAnswer = (questionId: string, answerKey: string) => {
-    setAnswers((prev) => ({
-      ...prev,
-      [questionId]: answerKey,
-    }));
+    const q = questionsData.find((item) => item.id === questionId);
+    const correctKeys = q ? getQuestionCorrectKeys(q) : [];
+    const isMsq = correctKeys.length > 1;
+
+    setAnswers((prev) => {
+      const current = prev[questionId] || [];
+      let updated: string[];
+
+      if (isMsq) {
+        if (current.includes(answerKey)) {
+          updated = current.filter((k) => k !== answerKey);
+        } else {
+          updated = [...current, answerKey].sort();
+        }
+      } else {
+        updated = [answerKey];
+      }
+
+      if (updated.length === 0) {
+        const next = { ...prev };
+        delete next[questionId];
+        return next;
+      }
+
+      return {
+        ...prev,
+        [questionId]: updated,
+      };
+    });
     trackEvent('answer_selected', { question_id: questionId, answer_key: answerKey });
   };
 
@@ -164,10 +199,9 @@ export const App: React.FC = () => {
         if (!matchesQ && !matchesSol && !matchesOpts) return false;
       }
 
-      const ans = answers[q.id];
-      const isAns = !!ans;
-      const correctKeys = q.correctKeys && q.correctKeys.length > 0 ? q.correctKeys : [q.correctAnswer];
-      const isCor = !!ans && correctKeys.includes(ans);
+      const evalResult = evaluateAnswer(q, answers[q.id]);
+      const isAns = evalResult.isAnswered;
+      const isCor = evalResult.isCorrect;
       const isBm = !!bookmarks[q.id];
 
       if (statusFilter === 'unanswered' && isAns) return false;
@@ -190,11 +224,10 @@ export const App: React.FC = () => {
     let incorrect = 0;
 
     for (const q of filteredQuestions) {
-      const userAns = answers[q.id];
-      if (userAns) {
+      const evalResult = evaluateAnswer(q, answers[q.id]);
+      if (evalResult.isAnswered) {
         answered++;
-        const correctKeys = q.correctKeys && q.correctKeys.length > 0 ? q.correctKeys : [q.correctAnswer];
-        if (correctKeys.includes(userAns)) {
+        if (evalResult.isCorrect) {
           correct++;
         } else {
           incorrect++;
@@ -226,16 +259,13 @@ export const App: React.FC = () => {
     let bookmarked = 0;
 
     for (const q of baseList) {
-      const userAns = answers[q.id];
-      if (!userAns) {
+      const evalResult = evaluateAnswer(q, answers[q.id]);
+      if (!evalResult.isAnswered) {
         unanswered++;
+      } else if (evalResult.isCorrect) {
+        correct++;
       } else {
-        const correctKeys = q.correctKeys && q.correctKeys.length > 0 ? q.correctKeys : [q.correctAnswer];
-        if (correctKeys.includes(userAns)) {
-          correct++;
-        } else {
-          incorrect++;
-        }
+        incorrect++;
       }
       if (bookmarks[q.id]) {
         bookmarked++;
@@ -262,11 +292,10 @@ export const App: React.FC = () => {
         stats[q.weekNum] = { total: 0, answered: 0, correct: 0 };
       }
       stats[q.weekNum].total += 1;
-      const userAns = answers[q.id];
-      if (userAns) {
+      const evalResult = evaluateAnswer(q, answers[q.id]);
+      if (evalResult.isAnswered) {
         stats[q.weekNum].answered += 1;
-        const correctKeys = q.correctKeys && q.correctKeys.length > 0 ? q.correctKeys : [q.correctAnswer];
-        if (correctKeys.includes(userAns)) {
+        if (evalResult.isCorrect) {
           stats[q.weekNum].correct += 1;
         }
       }
