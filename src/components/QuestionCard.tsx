@@ -27,6 +27,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   examSubmitted,
 }) => {
   const [showSolutionLocal, setShowSolutionLocal] = useState(false);
+  const [isMsqChecked, setIsMsqChecked] = useState(false);
   const isSolutionVisible = forceShowSolution || showSolutionLocal;
 
   const {
@@ -39,8 +40,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     selectedKeys,
   } = evaluateAnswer(question, selectedAnswer);
 
-  const isEvaluated =
-    (quizMode === 'practice' && isAnswered) || examSubmitted || isSolutionVisible;
+  const isEvaluated = isMsq
+    ? (quizMode === 'practice' && isMsqChecked) || examSubmitted || isSolutionVisible
+    : (quizMode === 'practice' && isAnswered) || examSubmitted || isSolutionVisible;
 
   let cardBorder = 'border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-[#111111]';
   if (isEvaluated && isAnswered) {
@@ -52,6 +54,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       cardBorder = 'border-rose-500/40 bg-rose-500/[0.02] dark:border-rose-500/30 dark:bg-rose-950/[0.05]';
     }
   }
+
+  const handleClear = () => {
+    setIsMsqChecked(false);
+    onClearAnswer(question.id);
+  };
 
   return (
     <article className={`border rounded-lg p-4 sm:p-5 mb-3 transition-colors ${cardBorder}`}>
@@ -93,7 +100,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         <div className="flex items-center gap-2">
           {isAnswered && (
             <button
-              onClick={() => onClearAnswer(question.id)}
+              onClick={handleClear}
               className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 transition-colors"
               title="Clear selection"
             >
@@ -219,22 +226,56 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         })}
       </div>
 
-      {/* MSQ Evaluation Hint in Practice Mode */}
-      {isMsq && isAnswered && isEvaluated && (
-        <div className="mb-2 text-xs font-mono">
-          {isCorrect ? (
-            <span className="text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
-              <Check className="w-3.5 h-3.5 stroke-[3]" /> All correct options selected
+      {/* MSQ Action Button before evaluation */}
+      {isMsq && quizMode === 'practice' && !isEvaluated && (
+        <div className="flex items-center justify-between mb-3 pt-1">
+          <button
+            onClick={() => setIsMsqChecked(true)}
+            disabled={!isAnswered}
+            className={`px-3 py-1.5 rounded text-xs font-mono font-medium transition-all ${
+              isAnswered
+                ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 hover:opacity-90 cursor-pointer shadow-sm'
+                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-500 cursor-not-allowed border border-zinc-200 dark:border-zinc-700/60'
+            }`}
+          >
+            {isAnswered
+              ? `Submit Answer (${selectedKeys.length} selected)`
+              : 'Select options and click Submit'}
+          </button>
+          {isAnswered && (
+            <span className="text-[11px] font-mono text-zinc-400">
+              Click to verify your selection
             </span>
-          ) : isPartiallyCorrect ? (
-            <span className="text-amber-600 dark:text-amber-400">
-              Partially correct ({selectedKeys.length} of {correctKeys.length} selected). Select all that apply.
-            </span>
-          ) : hasWrongSelection ? (
-            <span className="text-rose-600 dark:text-rose-400 flex items-center gap-1">
-              <X className="w-3.5 h-3.5 stroke-[3]" /> Contains incorrect selection
-            </span>
-          ) : null}
+          )}
+        </div>
+      )}
+
+      {/* MSQ Evaluation Feedback in Practice Mode */}
+      {isMsq && isAnswered && isEvaluated && quizMode === 'practice' && (
+        <div className="flex items-center justify-between mb-3 p-2.5 rounded bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 text-xs font-mono">
+          <div>
+            {isCorrect ? (
+              <span className="text-emerald-600 dark:text-emerald-400 flex items-center gap-1 font-semibold">
+                <Check className="w-3.5 h-3.5 stroke-[3]" /> All correct options selected
+              </span>
+            ) : isPartiallyCorrect ? (
+              <span className="text-amber-600 dark:text-amber-400">
+                Partially correct ({selectedKeys.length} of {correctKeys.length} selected).
+              </span>
+            ) : hasWrongSelection ? (
+              <span className="text-rose-600 dark:text-rose-400 flex items-center gap-1 font-semibold">
+                <X className="w-3.5 h-3.5 stroke-[3]" /> Contains incorrect selection
+              </span>
+            ) : null}
+          </div>
+          {!isCorrect && (
+            <button
+              onClick={() => setIsMsqChecked(false)}
+              className="text-[11px] text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 underline underline-offset-2 transition-colors ml-2"
+            >
+              Try Again
+            </button>
+          )}
         </div>
       )}
 
